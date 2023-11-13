@@ -1,0 +1,93 @@
+.Header {
+    width: 100%;
+    height: auto;
+    
+}
+
+.HeadreLists {
+    width: 1440px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+
+}
+
+.headerItems {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.headerItems:hover {
+    color: #33CAFF;
+    transition: all 0.4s ease;
+}
+
+.headerContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.headerContact button {
+    border: none;
+    border: 5px;
+    width: 102px;
+    height: 35px;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    background-color: #33CAFF;
+    cursor: pointer;
+}
+
+.SearchSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 15px;
+}
+
+.searchContainer {
+    width: 1240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.SearchSection i {
+    font-size: 25px;
+    color: white;
+}
+
+.SearchSection input {
+    width: 80%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    font-size: 15px;
+}
+
+.SearchSection input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #878787;
+}
