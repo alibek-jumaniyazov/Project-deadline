@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { UserContext } from '../Context/UserContext';
 import Banner from '../Components/home/Banner';
 import Product from '../Components/home/Product';
+import Brends from '../Components/home/Brends';
 
 export default function Home({ product }) {
     console.log(product);
@@ -34,6 +35,14 @@ export default function Home({ product }) {
                             <Product item={item} />
                         ))
                     }
+                </div>
+                <hr />
+                <div className="Brendsinfo">
+                    <div className="Brendstitle">
+                        <p>Популярные бренды</p>
+                        <span>Все бренды</span>
+                    </div>
+                    <Brends/>
                 </div>
             </div>
         </div>
