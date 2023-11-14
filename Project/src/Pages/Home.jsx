@@ -3,9 +3,17 @@ import { UserContext } from '../Context/UserContext';
 import Banner from '../Components/home/Banner';
 import Product from '../Components/home/Product';
 import Brends from '../Components/home/Brends';
+import User from '../Components/home/User';
+import WebInfo from '../Components/home/WebInfo';
+import Blog from '../Components/home/Blog';
+import { Link } from 'react-router-dom';
+import AllDivs from '../Components/home/AllDivs';
 
 export default function Home({ product }) {
-    console.log(product);
+
+    const { webInfo , blog } = useContext(UserContext)
+
+
     return (
         <div className='Home'>
             {
@@ -32,18 +40,11 @@ export default function Home({ product }) {
                 <div className="products">
                     {
                         product.products.map((item) => (
-                            <Product item={item} />
+                           <Link to={'print'} > <Product item={item} /> </Link>
                         ))
                     }
                 </div>
-                <hr />
-                <div className="Brendsinfo">
-                    <div className="Brendstitle">
-                        <p>Популярные бренды</p>
-                        <span>Все бренды</span>
-                    </div>
-                    <Brends/>
-                </div>
+               <AllDivs/>
             </div>
         </div>
     )

@@ -13,7 +13,7 @@ export default function Header() {
                     <Link to={'/'}><li className="headerItems" >Мужское</li></Link>
                     <Link to={'girl'}><li className="headerItems" >Женское</li></Link>
                     <Link to={'baby'}><li className="headerItems" >Детские </li></Link>
-                    <Link to={'/'}><li className="headerItems">Безопасная Сделка</li></Link>
+                    <Link to={'text'}><li className="headerItems">Безопасная Сделка</li></Link>
                     <li className="headerItems">Правило Пользование</li>
                 </ul>
                 <div className="headerContact">
